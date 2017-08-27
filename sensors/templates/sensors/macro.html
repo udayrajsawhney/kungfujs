@@ -1,0 +1,10 @@
+<h3><center>All Macro Sensors Listed Below</center></h3>
+
+<ul>
+    {% for sensor in macrosensors %}
+    <li> Temperature = {{ sensor.Temperature }} C</li>
+    <li> Humidity = {{ sensor.Humidity }} %</li>
+    <li> WaterLevel = {{ sensor.WaterLevel }} (cm)</li>
+    <br/><br/>
+    {% endfor %}
+</ul>

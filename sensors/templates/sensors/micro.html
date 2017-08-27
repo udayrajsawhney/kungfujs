@@ -1,0 +1,6 @@
+<h3><center>All Micro Sensors Listed Below</center></h3>
+<ul>
+    {% for sensor in microsensors %}
+    <li> Soil Moisture = {{ sensor.SoilMoisture }} C</li>
+    {% endfor %}
+</ul>
