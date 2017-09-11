@@ -40,7 +40,7 @@ def detailMicro(request):
 
 @csrf_exempt
 def add_reading(request):
-    if request.POST.get('temp'):
+    if request.POST.get('watL'):
         new_reading = MacroSensor()
         new_reading.Temperature = request.POST.get('temp')
         new_reading.Humidity = request.POST.get('hum')

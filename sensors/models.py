@@ -4,9 +4,9 @@ from django.db import models
 
 class MacroSensor(models.Model):
     read_time = models.DateField(auto_now=True)
-    Temperature = models.FloatField()
+    Temperature = models.FloatField(null = True)
     Humidity = models.FloatField(null = True)
-    WaterLevel = models.FloatField(null = True)
+    WaterLevel = models.FloatField()
 
     def __str__(self):
         return 'Temperature ' + str(self.Temperature) + 'C - Humidity' + str(self.Humidity) + '% - WaterLevel' + str(self.WaterLevel) + 'cm'
